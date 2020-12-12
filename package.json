@@ -1,0 +1,38 @@
+{
+  "name": "math-parser",
+  "version": "0.1.0",
+  "description": "A configurable parser for math expressions",
+  "license": "Apache-2.0",
+  "main": "js/main.js",
+  "files": [
+    "/js",
+    "/ts",
+    "tsconfig.json",
+    "tslint.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dpvc/math-parser"
+  },
+  "keywords": [
+    "math",
+    "equation"
+  ],
+  "scripts": {
+    "clean:js": "npx rimraf js",
+    "clean": "npm run --silent clean:js",
+    "precompile": "npm run --silent clean:js",
+    "compile": "npx tsc"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "tslint": "^6.1.1",
+    "tslint-jsdoc-rules": "^0.2.0",
+    "tslint-unix-formatter": "^0.2.0",
+    "typescript": "~3.8.3",
+    "typescript-tools": "^0.3.1"
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
