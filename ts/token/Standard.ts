@@ -38,7 +38,7 @@ UnaryOp.define('uminus', {precedence: 3, negateNumbers: true}, UnaryMinus);
 /**
  * Generic minus operator (and unary negation)
  */
-export const Minus = BinaryOp.define('plus', {
+export const Minus = BinaryOp.define('minus', {
   token: ['-', '\u2212'], precedence: 1, type: 'both', normalizeTo: '-',
   unaryClass: UnaryMinus
 });
